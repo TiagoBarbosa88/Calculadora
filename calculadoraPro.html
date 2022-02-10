@@ -11,7 +11,7 @@
             padding: 0;
         }
         .fundo{
-            background-image: linear-gradient(45deg, black, rgba(25, 25, 177, 0.479));
+            background-image: linear-gradient(45deg, rgb(24, 22, 22), rgba(105, 105, 252, 0.479));
             height: 100vh;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
@@ -49,7 +49,30 @@
             color: black;
             text-align: right;
             padding: 5px;
+            overflow-x: auto;
+            overflow-y: hidden;
         }
+
+            /*Barra de rolagem*/
+        ::-webkit-scrollbar{
+        height: 4px;
+        }
+
+        /*Trilha (Barra de progresso)*/
+        ::-webkit-scrollbar-track{
+        background-color: rgb(167, 167, 167);
+
+        }
+        /*Alça de rolagem arrastável*/
+        ::-webkit-scrollbar-thumb{
+        background-color: rgb(21, 85, 110);
+
+        }
+        /*Alça de rolagem arrastável*/
+        ::-webkit-scrollbar-thumb:hover{
+        background-color: rgb(11, 49, 65);
+        }
+
     </style>
 </head>
 <body>
